@@ -1,0 +1,51 @@
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed";
+  font-weight: bolder;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 300ms ease-in;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &.google {
+    background-color: rgb(112, 112, 218);
+    margin-left: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: rgb(68, 68, 199);
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 4px 9px 11px rgba(0, 0, 0, 0.7);
+  }
+
+  &.inverted {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 4px 9px 11px rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border: none;
+    }
+  }
+}
